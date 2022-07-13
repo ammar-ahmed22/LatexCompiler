@@ -1,0 +1,11 @@
+{
+  "$schema": "https://deno.land/x/denon@2.5.0/schema.json",
+  "watch": false,
+  "scripts": {
+    "create": {
+      "cmd": "deno run create.ts",
+      "desc": "Create a new project from template",
+      "allow": ["read", "write", "run"]
+    }
+  }
+}

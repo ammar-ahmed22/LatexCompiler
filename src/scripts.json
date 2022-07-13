@@ -1,0 +1,16 @@
+{
+  "$schema": "https://deno.land/x/denon@2.5.0/schema.json",
+  "watch": false,
+  "scripts": {
+    "compile": {
+      "cmd": "deno run compile.ts",
+      "desc": "Compile LaTeX project",
+      "allow": ["read", "write", "run"]
+    },
+    "preview" : {
+      "cmd": "deno run preview.ts",
+      "desc": "Preview LaTeX project",
+      "allow": ["read", "write", "run"]
+    }
+  }
+}

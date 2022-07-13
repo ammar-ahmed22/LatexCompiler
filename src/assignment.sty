@@ -1,0 +1,82 @@
+\usepackage[utf8]{inputenc}
+
+
+%increasing the margins 
+\usepackage[margin=1in]{geometry}
+
+%package for equations and stuff
+\usepackage{amsmath}
+
+%package for inserting pictures 
+\usepackage{graphicx}
+
+%package for for the header and footer
+\usepackage{fancyhdr}
+
+%package for multiple columns 
+\usepackage{multicol}
+
+%package for formatting code nicely
+\usepackage{listings}
+
+%package for colors
+\usepackage{xcolor}
+
+%package for tables
+\usepackage{array}
+
+%package for extra subsection
+\usepackage{titlesec}
+
+%%formatting the paragraph
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%command for scientific notation
+\newcommand{\e}[1]{\times 10^{#1}}
+%command for degrees
+\newcommand{\degrees}[1]{#1 $^{\circ}$C}
+
+
+%defining colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+
+%Setting the formatting for MATLAB Code
+\lstset {
+    language=Matlab,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+    basicstyle=\ttfamily,
+    commentstyle=\ttfamily,
+    commentstyle=\color{codegreen},
+    stringstyle=\color{codepurple}
+}
+
+\counterwithout{section}{chapter}
+\counterwithout{table}{chapter}
+\usepackage{multirow}
+
+\usepackage{float}
+
+% \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+% \makeatletter
+% \renewcommand{\thesection}{\@arabic\c@section}
+% \makeatother
+
+%Setting the headers and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{[Class Name] [Assignment Name]}
+\rhead{Ammar Ahmed (\textbf{ID}: 20883610)}
+\rfoot{Page \thepage}
